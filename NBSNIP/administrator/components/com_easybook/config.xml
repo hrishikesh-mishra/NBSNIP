@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/administrator/components/com_easybook/element">
+		<param name="show_logo" type="radio" default="1" label="Show Logo" description="Show Logo Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="send_mail" type="radio" default="1" label="Send Notification E-Mail" description="Send Notification E-Mail Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="entries_perpage" type="text" size="3" default="5" label="Entries per Page" description="Entries per Page DESC" />
+		<param name="entries_order" type="radio" default="DESC" label="Entries Order" description="Entries Order DESC">
+			<option value="DESC">New entries first</option>
+			<option value="ASC">New entries last</option>
+		</param>
+		<param name="show_introtext" type="radio" default="0" label="Show Introtext" description="Show Introtext Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="introtext" type="textarea" value="Welcome to EasyBook" rows="4" cols="30" label="Introtext" description="Introtext Desc" />
+		<param name="support_bbcode" type="radio" default="1" label="Allow BBCode" description="Allow BBCode Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="support_smilie" type="radio" default="1" label="Allow Smilies" description="Allow Smilies Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="support_link" type="radio" default="0" label="Allow Links" description="Allow Links Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="support_mail" type="radio" default="1" label="Allow email addresses" description="Allow email addresses Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="support_pic" type="radio" default="0" label="Allow Pictures" description="Allow Pictures Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="wordwrap" type="radio" default="1" label="Automatic word wrap" description="Automatic word wrap Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="maxlength" type="text" size="4" default="75" label="Automatic word wrap after" description="Automatic word wrap after Desc" />
+		<param name="@spaceer" type="spacer" default="" label="" description="" />
+		<param name="rating_max"  type="text" size="3" default="5" label="Maximum Rating" description="Maximum Rating Desc" />
+		<param name="show_rating" type="radio" default="1" label="Show Rating" description="Show Rating Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="enable_log" type="radio" default="1" label="IP Logging" description="IP Logging Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_mail" type="radio" default="1" label="Show Mail" description="Show Mail Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="require_mail" type="radio" default="1" label="Require Mail" description="Require Mail Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_home" type="radio" default="1" label="Show Home" description="Shome Home Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_icq" type="radio" default="1" label="Show ICQ" description="Show ICQ Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_aim" type="radio" default="1" label="Show AIM" description="Show AIM Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_msn" type="radio" default="1" label="Show MSN" description="Show MSN Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_yah" type="radio" default="1" label="Show YAH" description="Show YAH Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_skype" type="radio" default="1" label="Show Skype" description="Show Skype Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="default_published" type="radio" default="1" label="Publish new Entries" description="Publish new entries Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="badwordfilter" type="radio" default="1" label="Badwordfilter" description="Badwordfilter Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_captcha" type="captcha" default="0" label="Enable Captcha" description="Enable Captcha Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spaceer" type="spacer" default="" label="" description="" />
+		<param name="add_acl" type="acl" default="18" label="Add ACL" description="Add ACL Desc" />
+		<param name="admin_acl" type="acl" default="20" label="Admin ACL" description="Admin ACL Desc" />
+	</params>
+</config>

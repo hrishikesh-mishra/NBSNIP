@@ -1,0 +1,11 @@
+CREATE TABLE `joomla15`.`jos_sn_user_friends` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `userid` VARCHAR(50) NOT NULL DEFAULT '',
+  `friend` VARCHAR(50) NOT NULL DEFAULT '',
+  `adate` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `params` TEXT NOT NULL,
+  `published` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB
+CHARACTER SET utf8 COLLATE utf8_general_ci;

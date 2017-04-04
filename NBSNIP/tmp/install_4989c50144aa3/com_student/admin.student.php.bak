@@ -1,0 +1,280 @@
+<?php 
+
+defined ('_JEXEC') or die ('Restricted Access ');
+
+switch (JRequest ::getVar('task'))
+{
+case 'add':
+	addEntry();
+	break;
+case 'edit':
+	editEntry();
+	break;
+case 'update':
+	updateEntry();
+	break;
+default :
+	entryForm();
+}
+
+
+
+function editEntry()
+{
+	$db = & JFactory :: getDBO();
+	$id  = JRequest::getVar('id');
+	$fldID= "'". $db->getEscaped(JRequest::getVar('id'))."'";
+	$db = & JFactory :: getDBO();
+	$query = "SELECT * FROM #__student  " .
+	" WHERE enl= " .$fldID ;
+
+	$db->setQuery($query, 0 , 10);
+	$rows = $db->loadObjectList();
+
+	if($rows= $db->loadObjectList())
+	{
+	
+?>
+
+<form id="form11" name="form11" method="post" action="index.php?option=com_student&task=update&id=<?php echo $id ; ?>" >
+<p> 
+<table >
+<tr> 
+	<td>  <strong><?php echo JText::_( 'Enrollment Number:' ); ?></strong></td> 
+	<td><input type ="text" name="enl" value='<?php echo $rows[0]->enl; ?>' /> </td>
+</tr>
+<tr>
+	<td> <strong><?php echo JText::_( 'Name:' ); ?></strong> </td> 
+	<td><input type="text" name="name" value='<?php echo $rows[0]->name; ?>' /><td>
+</tr>
+
+<tr>
+	<td> <strong><?php echo JText::_( 'Progam:' ); ?></strong></td>
+	<td><input type="text" name="pro" value='<?php echo $rows[0]->pro; ?>'/></td>
+</tr>
+
+
+<tr>
+	<td>  <strong><?php echo JText::_( 'Study Center:' ); ?></strong></td>
+	<td> <input type="text" name ="sc" value='<?php echo $rows[0]->scenter; ?>'/></td>
+</tr>
+
+<tr>
+	<td> <strong><?php echo JText::_( 'Regional Center:' ); ?></strong></td>
+	<td><input type ="text" name ="rc" value='<?php echo $rows[0]->regcenter; ?>'/> </td>
+</tr>
+
+<tr>
+	<td> <input type="submit" name="submit" value="Save" /></td>
+	<td> <input type ="reset" name="reset" value="clear" /></td>
+</tr>
+</table>
+</p>
+
+</form>
+<?php
+ }
+  else 
+  echo 'Data not found ..... ';
+ }
+
+
+function addEntry()
+{
+	$enl = JRequest::getVar('enl');
+	$name= JRequest::getVar('name');
+	$pro=JRequest::getVar('pro');
+	$sc=JRequest::getVar('sc');
+	$rc=JRequest::getVar('rc');
+
+	
+
+	$db = & JFactory :: getDBO();
+	
+	$enl = "'" . $db->getEscaped($enl) . "'";
+	$name = "'" . $db->getEscaped($name) . "'";
+	$pro = "'" . $db->getEscaped($pro) . "'";
+	$sc = "'" . $db->getEscaped($sc) . "'";
+	$rc = "'" . $db->getEscaped($rc) . "'";
+
+	$insertSql ="INSERT INTO #__student " .
+		    " (enl, name, pro, scenter, regcenter ) ".
+		    " VALUES (" . $enl . "," . $name . "," . $pro ."," .$sc . ",". $rc . ");";
+	
+
+	$db->setQuery($insertSql, 0);
+	$db->query();
+
+	echo "Data saved . ";
+}
+
+Function updateEntry()
+{
+	$id =JRequest::getVar('id');
+	$enl = JRequest::getVar('enl');
+	$name= JRequest::getVar('name');
+	$pro=JRequest::getVar('pro');
+	$sc=JRequest::getVar('sc');
+	$rc=JRequest::getVar('rc');
+	
+	$db = & JFactory :: getDBO();
+	$id= "'".$db->getEscaped($id)."'";
+	$enl = "'" . $db->getEscaped($enl) . "'";
+	$name = "'" . $db->getEscaped($name) . "'";
+	$pro = "'" . $db->getEscaped($pro) . "'";
+	$sc = "'" . $db->getEscaped($sc) . "'";
+	$rc = "'" . $db->getEscaped($rc) . "'";
+
+	$updateSql="UPDATE #__student " .
+		" SET enl= " .$enl .",".
+		" name=" .$name. ",".
+		" pro=". $pro.",".
+		" scenter=". $sc. ",".
+		" regcenter=" .$rc. 
+		" WHERE enl=" .$id;
+	
+	
+
+	$db->setQuery ($updateSql, 0);
+	$db->query();
+
+	echo "<h3> Field updated! </h3>";
+	echo "<a href ='index.php?option=com_student'> Return to GuestBook List </a>";
+}
+
+
+
+Function entryForm()
+{
+?>
+
+
+
+
+<form id="form1" name="form1" method="post" 
+	action="index.php?option=com_student&task=add" >
+<p> 
+<table >
+<tr> 
+	<td>  <strong><?php echo JText::_( 'Enrollment Number:' ); ?></strong></td> 
+	<td><input type ="text" name="enl" /> </td>
+</tr>
+<tr>
+	<td> <strong><?php echo JText::_( 'Name:' ); ?></strong> </td> 
+	<td><input type="text" name="name" /><td>
+</tr>
+
+<tr>
+	<td> <strong><?php echo JText::_( 'Progam:' ); ?></strong></td>
+	<td><input type="text" name="pro" /></td>
+</tr>
+
+
+<tr>
+	<td>  <strong><?php echo JText::_( 'Study Center:' ); ?></strong></td>
+	<td> <input type="text" name ="sc" /></td>
+</tr>
+
+<tr>
+	<td> <strong><?php echo JText::_( 'Regional Center:' ); ?></strong></td>
+	<td><input type ="text" name ="rc" /> </td>
+</tr>
+
+<tr>
+	<td> <input type="submit" name="submit" value="Save" /></td>
+	<td> <input type ="reset" name="reset" value="clear" /></td>
+</tr>
+</table>
+</p>
+</form>
+<br>
+<br>
+
+
+<table class="adminlist">
+			<thead>
+				<tr>
+					<th width="10">
+						<?php echo JText::_( 'Num' ); ?>
+					</th>
+					<th width="10" class="title">
+						<input type="checkbox" name="toggle" value="" onclick="checkAll(<?php echo count($rows); ?>);" />
+					</th>
+					<th class="title">
+						<?php echo JHTML::_('grid.sort',   'Enrollment No.', 'cd.enl'); ?>
+					</th>
+					<th width="5%" class="title" nowrap="nowrap">
+						<?php echo JHTML::_('grid.sort',   'Name', 'cd.name'); ?>
+					</th>
+					<th nowrap="nowrap" width="8%">
+						<?php echo JHTML::_('grid.sort',   'Program', 'cd.pro'); ?>
+						<?php echo JHTML::_('grid.order',  $rows ); ?>
+					</th>
+					<th width="8%" nowrap="nowrap">
+						<?php echo JHTML::_('grid.sort',   'Study Center', 'cd.sc'); ?>
+					</th>
+					<th width="10%" class="title">
+						<?php echo JHTML::_('grid.sort',   'Regional Center', 'cd.rc'); ?>
+					</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="11">
+						<?php echo 'byte hacker; ?>
+					</td>
+				</tr>
+			</tfoot>
+			
+
+
+<?php
+	$db = & JFactory :: getDBO();
+	$query = "SELECT * FROM #__student ORDER BY enl" ;
+
+	$db->setQuery($query, 0 , 10);
+	$rows = $db->loadObjectList();
+
+	$i=0;
+	foreach ($rows as $row)
+	{
+		$link ='index.php?option=com_student&task=edit&id=' . $row->enl;
+
+		?>
+		<tr >
+					<td>
+						<?php echo ( $i ); ?>
+					</td>
+					<td>
+						<?php echo $checked; ?>
+					</td>
+					<td>
+					
+						<span class="editlinktip hasTip" title="<?php echo JText::_( 'Edit student' );?>::<?php echo $row->enl; ?>">
+						<a href="<?php echo $link; ?>">
+							<?php echo $row->enl; ?></a> </span>
+					</td>
+
+					<td align="center">
+						<?php echo $row->ame;?>
+					</td>
+					<td class="order">
+						<?php echo $row->pro; ?>
+					</td>
+					<td align="center">
+						<?php echo $row->sc;?>
+					</td>
+					<td>
+							<?php echo $row->rc; ?>
+					</td>
+			</tbody>
+			</table>
+	
+	<?php
+	
+	 }
+	 $i++;
+	
+	
+}
+?>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.0.0">
+	<name>Jobs Items</name>
+	<author>Hrishikesh Kr. Mishra</author>
+	<creationDate>Feb 2009</creationDate>
+	<copyright>Copyright (C) 2008 - 2009 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>sd.hrishi@gmail.com</authorEmail>
+	<version>1.0.0</version>
+	<description>Parameters for individual Jobs Items</description>
+	<params>
+		<param name="show_reference" type="radio" default="1" label="Reference" description="Show/Hide the Reference">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_jobtype" type="radio" default="1" label="Job Type" description="Show/Hide the Job Type">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_qualification" type="radio" default="1" label="Qualification" description="Show/Hide Qualification">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_duration" type="radio" default="1" label="Duration" description="Show/Hide the Duration">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_howtoapply" type="radio" default="1" label="How to apply" description="Show/Hide How to apply">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_joblocation" type="radio" default="1" label="Job Location" description="Show/Hide the Job Location">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_jobcity" type="radio" default="1" label="Job City" description="Show/Hide the Job city info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_jobstate" type="radio" default="1" label="Job State" description="Show/Hide the Job state info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_noofopening" type="radio" default="1" label="No. of opening" description="Show/Hide the Number of Openinginfo">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_compensationrange" type="radio" default="1" label="Compensation Range" description="Show/Hide the Compensation Range info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_comname" type="radio" default="1" label="Company Name" description="Show/Hide the Company Name info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_comlocation" type="radio" default="1" label="Company Location" description="Show/Hide the Comany Location info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_comcity" type="radio" default="1" label="Company City" description="Show/Hide the Company City info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_comstate" type="radio" default="1" label="Company State" description="Show/Hide the Company state info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_comemailid" type="radio" default="1" label="Company Email ID" description="Show/Hide the Company Email-ID info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_comwebsite" type="radio" default="1" label="Company website" description="Show/Hide the Company website info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_contactname" type="radio" default="1" label="Contact Name" description="Show/Hide the Contact Name info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_contactphone" type="radio" default="1" label="Contact Phone" description="Show/Hide the contact phone info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_contactmobile" type="radio" default="1" label="Contact Mobile" description="Show/Hide the Contact Mobile info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_contactemailid" type="radio" default="1" label="Contact Email-ID" description="Show/Hide the Contact EmailID info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_description" type="radio" default="0" label="Description" description="Show/Hide the description">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		
+	</params>
+	<params group="advanced">
+		<param name="jobs_icons" type="list" default="0" label="Icons/text" description="Jobs Icons">
+			<option value="0">Icons</option>
+			<option value="1">Text</option>
+			<option value="2">None</option>
+		</param>
+		<param name="icon_location" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Location Icon" description="Icon for the Location (Address) info" />
+		<param name="icon_email" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Email Icon" description="Icon for the Email info" />
+		<param name="icon_phone" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Phone Icon" description="Icon for the Phone info" />
+		<param name="icon_mobile" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Mobile Icon" description="Icon for the Mobile info" />
+	</params>
+	
+	<params group="email">
+		<param name="show_email_form" type="radio" default="1" label="Email Form" description="Show/Hide the email to form">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_email_copy" type="radio" default="1" label="Email Copy" description="PARAMEMAILCOPY">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+	</params>
+</install>

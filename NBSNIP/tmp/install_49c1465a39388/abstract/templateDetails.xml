@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="template">
+	<name>abstract</name>
+	<creationDate>10/12/2005</creationDate>
+	<author>joomladesigns</author>
+	<copyright>joomladesigns Copyright 2005. All rights reserved.</copyright>
+	<authorEmail>team@joomladesigns.co.uk</authorEmail>
+	<authorUrl>www.joomladesigns.co.uk</authorUrl>
+	<version>1.1</version>
+	<description>abstract template. Created for Mambo 4.5 plus Joomla</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<images>
+<filename>images/abstract.jpg</filename>
+<filename>images/logo.gif</filename>
+<filename>images/bg.gif</filename>
+	</images>
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

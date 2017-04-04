@@ -1,0 +1,12 @@
+CREATE TABLE `joomla15`.`jos_sn_group` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `topic` VARCHAR(250) NOT NULL DEFAULT '',
+  `createdby` VARCHAR(100) NOT NULL DEFAULT '',
+  `creationdate` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00' ,
+  `addedbyip` VARCHAR(30) NOT NULL DEFAULT '',
+  `params` TEXT NOT NULL,
+  `published` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB
+CHARACTER SET utf8 COLLATE utf8_general_ci;

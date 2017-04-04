@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.0.0">
+	<name>Doctors Items</name>
+	<author>Hrishikesh Kr. Mishra</author>
+	<creationDate>2009</creationDate>
+	<copyright>Copyright (C) 2008 - 2009 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>sd.hrishi@gmail.com</authorEmail>
+	<version>1.0.0</version>
+	<description>Parameters for individual Doctors Items</description>
+	<params>
+		<param name="show_specialist" type="radio" default="1" label="Specialist" description="Show/Hide the Specialist Info ">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_aooperation" type="radio" default="0" label="Area of Operation" description="Show/Hide the  Area of Operation info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_pclinic" type="radio" default="1" label="Parmanent Clinic" description="Show/Hide the Parmanent Clinic">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_website" type="radio" default="1" label="Website" description="Show/Hide the WebSite">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_email" type="radio" default="0" label="Email ID" description="PARAMEMAIL">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_phone" type="radio" default="1" label="Phone No" description="Show/Hide the Phone number">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_mobile" type="radio" default="1" label="Mobile" description="Show/Hide the Mobile number">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_location" type="radio" default="1" label="Location" description="Show/Hide the Location info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_city" type="radio" default="1" label="City" description="Show/Hide the city info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_state" type="radio" default="1" label="State" description="Show/Hide the state info">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_description" type="radio" default="0" label="Description" description="Show/Hide the description">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		
+	</params>
+	<params group="advanced">
+		<param name="doctors_icons" type="list" default="0" label="Icons/text" description="Doctors Icons">
+			<option value="0">Icons</option>
+			<option value="1">Text</option>
+			<option value="2">None</option>
+		</param>
+		<param name="icon_location" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Location Icon" description="Icon for the Location (Address) info" />
+		<param name="icon_email" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Email Icon" description="Icon for the Email info" />
+		<param name="icon_phone" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Phone Icon" description="Icon for the Phone info" />
+		<param name="icon_mobile" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Mobile Icon" description="Icon for the Mobile info" />
+	</params>
+	
+	<params group="email">
+		<param name="show_email_form" type="radio" default="1" label="Email Form" description="Show/Hide the email to form">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_email_copy" type="radio" default="1" label="Email Copy" description="PARAMEMAILCOPY">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>REPORT</name>
+  <creationDate>March 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>Open Source under GNU/GPL </copyright>
+  <license>Open Source </license>
+  <version>1.0.0</version>
+  <description>Report Module. this module provide the various kinds of report. visitor report, registered member 
+  report, scrap report, defaultor report etc.</description>
+
+	
+
+  <administration>
+    <menu>Report</menu>
+	<submenu>
+		<menu link="option=com_report&amp;controller=visitor">Visitor</menu>
+		<menu link="option=com_report&amp;controller=classifieds">Classifieds</menu>
+		<menu link="option=com_report&amp;controller=matrimonial">Matrimonial</menu>
+		<menu link="option=com_report&amp;controller=blog">Blog</menu>
+		<menu link="option=com_report&amp;controller=socialnetworking">Social-Networking</menu>
+	
+	</submenu>
+   <files folder="admin">
+             <filename>admin.report.php</filename> 
+			 
+			<filename>controllers/blog.php</filename>
+			<filename>controllers/classifieds.php</filename>
+			<filename>controllers/matrimonial.php</filename>
+			<filename>controllers/socialnetworking.php</filename>
+			<filename>controllers/visitor.php</filename>
+						
+			<filename>models/blog.php</filename>
+			<filename>models/classifieds.php</filename>
+			<filename>models/matrimonial.php</filename>
+			<filename>models/socialnetworking.php</filename>
+			<filename>models/visitor.php</filename>
+			
+			<filename>views/blog/view.html.php</filename>
+			<filename>views/blog/view.pdf.php</filename>
+			<filename>views/blog/tmpl/default.php</filename>
+			<filename>views/blog/tmpl/default_allUserRpt.php</filename>
+			<filename>views/blog/tmpl/default_usrActRpt.php</filename>
+			<filename>views/blog/tmpl/default_usrBlog.php</filename>
+			
+			
+			<filename>views/classifieds/view.html.php</filename>
+			<filename>views/classifieds/view.pdf.php</filename>
+			<filename>views/classifieds/tmpl/default.php</filename>
+			<filename>views/classifieds/tmpl/default_jobrpt.php</filename>
+			<filename>views/classifieds/tmpl/default_realDefRpt.php</filename>
+			<filename>views/classifieds/tmpl/default_realstrpt.php</filename>
+			
+			<filename>views/matrimonial/view.html.php</filename>
+			<filename>views/matrimonial/view.pdf.php</filename>
+			<filename>views/matrimonial/tmpl/default.php</filename>
+			<filename>views/matrimonial/tmpl/default_allUserRpt.php</filename>
+			<filename>views/matrimonial/tmpl/default_usrActRpt.php</filename>
+			<filename>views/matrimonial/tmpl/default_usrPrfRpt.php</filename>
+			
+			<filename>views/SocialNetworking/view.html.php</filename>
+			<filename>views/SocialNetworking/view.pdf.php</filename>
+			<filename>views/SocialNetworking/tmpl/default.php</filename>
+			<filename>views/SocialNetworking/tmpl/default_allUserRpt.php</filename>
+			<filename>views/SocialNetworking/tmpl/default_usrActRpt.php</filename>
+			<filename>views/SocialNetworking/tmpl/default_usrGrp.php</filename>
+			<filename>views/SocialNetworking/tmpl/default_usrScrap.php</filename>
+			
+			<filename>views/visitor/view.html.php</filename>
+			<filename>views/visitor/view.pdf.php</filename>
+			<filename>views/visitor/tmpl/default.php</filename>
+			<filename>views/visitor/tmpl/default_visitorRpt.php</filename>
+			
+	</files>  
+  </administration>
+  </install>

@@ -1,0 +1,14 @@
+CREATE TABLE `joomla15`.`jos_blog_blogs` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `userid` VARCHAR(100) NOT NULL DEFAULT '',
+  `topic` VARCHAR(200) NOT NULL DEFAULT '',
+  `blog` TEXT NOT NULL,
+  `bdate` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `params` TEXT NOT NULL,
+  `published` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1,
+   `addedbyip` VARCHAR(30) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB
+CHARACTER SET utf8 COLLATE utf8_general_ci;
+

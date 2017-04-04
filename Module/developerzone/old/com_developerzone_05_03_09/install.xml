@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>developerzone</name>
+  <creationDate>March 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>Open Source under GNU/GPL </copyright>
+  <license>Open Source </license>
+  <version>1.0.0</version>
+  <description>The developer-zone provide a plateform for the developer to share their codes views etc.
+  They can download or uploads the codes or write article on particular topices and also they 
+  can read.</description>
+
+
+  <administration>
+    <menu>Developer-Zone</menu>
+	<submenu>
+		<menu link="option=com_developerzone&amp;controller=categories">Categories</menu>
+		<menu link="option=com_developerzone&amp;controller=codefile">Code-Files</menu>
+		<menu link="option=com_developerzone&amp;controller=articles">Articles</menu>
+	</submenu>
+   <files folder="admin">
+            <filename>admin.developerzone.php</filename>
+				
+			<filename>tables/categories.php</filename>
+			<filename>tables/codefile.php</filename>
+			<filename>tables/articles.php</filename>
+			
+			<filename>controllers/categories.php</filename>
+			<filename>models/categories.php</filename>
+			<filename>models/categoriesinput.php</filename>
+			<filename>views/categories/view.html.php</filename>
+			<filename>views/categories/tmpl/default.php</filename>
+			<filename>views/categoriesinput/view.html.php</filename>
+			<filename>views/categoriesinput/tmpl/form.php</filename>
+			
+			<filename>controllers/articles.php</filename>
+			<filename>models/articles.php</filename>
+			<filename>models/articlesinput.php</filename>
+			<filename>views/articles/view.html.php</filename>
+			<filename>views/articles/tmpl/default.php</filename>
+			<filename>views/articlesinput/view.html.php</filename>
+			<filename>views/articlesinput/tmpl/form.php</filename>
+			
+			<filename>controllers/codefile.php</filename>
+			<filename>models/codefile.php</filename>
+			<filename>models/codefileinput.php</filename>
+			<filename>views/codefile/view.html.php</filename>
+			<filename>views/codefile/tmpl/default.php</filename>
+			<filename>views/codefileinput/view.html.php</filename>
+			<filename>views/codefileinput/tmpl/form.php</filename>
+	</files>  
+  </administration>
+  </install>

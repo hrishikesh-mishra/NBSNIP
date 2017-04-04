@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>YellowPage</name>
+  <creationDate>Feb 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>Open Source under GNU/GPL </copyright>
+  <license>Open Source </license>
+  <version>1.0.0</version>
+  <description>YellowPage information component. It provides various yellow page information 
+  like education, medical, hotel etc. Especially developed for North Bengal (India)</description>
+
+  <files folder="site">
+			<filename component="com_yellowpage">yellowpage.php </filename>
+			<filename>controllers/categories.php</filename>
+			<filename>models/categories.php</filename>
+			<filename>views/categories/view.html.php</filename>
+			<filename>views/categories/tmpl/default.php</filename>
+
+			<filename>controllers/education.php</filename>
+			<filename>models/education.php</filename>
+			<filename>views/education/view.html.php</filename>
+			<filename>views/education/tmpl/default.php</filename>
+	</files>
+  <administration>
+    <menu>YellowPage</menu>
+	<submenu>
+		<menu link="option=com_yellowpage&amp;controller=education">Education</menu>
+		<menu link="option=com_yellowpage&amp;controller=medical">Medical</menu>
+		<menu link="option=com_yellowpage&amp;controller=hotellodge">Hotel/Lodge</menu>
+		<menu link="option=com_yellowpage&amp;controller=club">Club</menu>
+		<menu link="option=com_yellowpage&amp;controller=doctors">Doctors</menu>
+		<menu link="option=com_yellowpage&amp;controller=vehicle">Vehicle</menu>
+		<menu link="option=com_yellowpage&amp;controller=categories">Categories</menu>
+	</submenu>
+   <files folder="admin">
+              <filename>admin.yellowpage.php</filename> 
+				<filename>helpers\education_items.xml</filename>  
+               <filename>controllers/education.php</filename>
+			   <filename>models/education.php</filename>
+			    <filename>models/educationinput.php</filename>
+			   <filename>Tables/education.php</filename>
+			   <filename>views/education/view.html.php</filename>
+			   <filename>views/education/tmpl/default.php</filename>
+			    <filename>views/educationInput/view.html.php</filename>
+			   <filename>views/educationInput/tmpl/form.php</filename>
+			   
+				<filename>helpers\medical_items.xml</filename>  
+               <filename>controllers/medical.php</filename>
+			   <filename>models/medical.php</filename>
+			    <filename>models/medicalinput.php</filename>
+			   <filename>Tables/medical.php</filename>
+			   <filename>views/medical/view.html.php</filename>
+			   <filename>views/medical/tmpl/default.php</filename>
+			    <filename>views/medicalInput/view.html.php</filename>
+			   <filename>views/medicalInput/tmpl/form.php</filename>
+
+			   <filename>helpers\hotellodge_items.xml</filename>  
+               <filename>controllers/hotellodge.php</filename>
+			   <filename>models/hotellodge.php</filename>
+			    <filename>models/hotellodgeinput.php</filename>
+			   <filename>Tables/hotellodge.php</filename>
+			   <filename>views/hotellodge/view.html.php</filename>
+			   <filename>views/hotellodge/tmpl/default.php</filename>
+			    <filename>views/hotellodgeInput/view.html.php</filename>
+			   <filename>views/hotellodgeInput/tmpl/form.php</filename>
+
+			   <filename>helpers\club_items.xml</filename>  
+               <filename>controllers/club.php</filename>
+			   <filename>models/club.php</filename>
+			    <filename>models/clubinput.php</filename>
+			   <filename>Tables/club.php</filename>
+			   <filename>views/club/view.html.php</filename>
+			   <filename>views/club/tmpl/default.php</filename>
+			    <filename>views/clubInput/view.html.php</filename>
+			   <filename>views/clubInput/tmpl/form.php</filename>
+
+				<filename>helpers\doctors_items.xml</filename>  
+               <filename>controllers/doctors.php</filename>
+			   <filename>models/doctors.php</filename>
+			    <filename>models/doctorsinput.php</filename>
+			   <filename>Tables/doctors.php</filename>
+			   <filename>views/doctors/view.html.php</filename>
+			   <filename>views/doctors/tmpl/default.php</filename>
+			    <filename>views/doctorsInput/view.html.php</filename>
+			   <filename>views/doctorsInput/tmpl/form.php</filename>
+
+				<filename>helpers\vehicle_items.xml</filename>  
+               <filename>controllers/vehicle.php</filename>
+			   <filename>models/vehicle.php</filename>
+			    <filename>models/vehicleinput.php</filename>
+			   <filename>Tables/vehicle.php</filename>
+			   <filename>views/vehicle/view.html.php</filename>
+			   <filename>views/vehicle/tmpl/default.php</filename>
+			    <filename>views/vehicleInput/view.html.php</filename>
+			   <filename>views/vehicleInput/tmpl/form.php</filename>
+			   
+
+			   <filename>controllers/categories.php</filename>
+			   <filename>models/categories.php</filename>
+			   <filename>Tables/categories.php</filename>
+			   <filename>views/categories/view.html.php</filename>
+			   <filename>views/categories/tmpl/default.php</filename>
+	</files>  
+  </administration>
+  </install>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+     <name>Contact Us module</name>
+     <author>Dan Rahmel</author>
+     <creationDate>March 2007</creationDate>
+     <copyright>(C) 2007 Dan Rahmel. All rights reserved.</copyright>
+     <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+     <authorEmail>admin@joomlajumpstart.org</authorEmail>
+     <authorUrl>www.joomlajumpstart.org</authorUrl>
+     <version>1.0.0</version>
+     <description>The Contact Us module will display the contact info
+          for contacts filed in the public contacts category. Select
+          the public contacts category in the Module Manager
+          interface for this module.</description>
+     <files>
+          <filename module="mod_contactus"
+               >mod_contactus.php</filename>
+     </files>
+     <params>
+          <param name="publiccat" type="text"  
+               label="Public Contacts Category ID" 
+               description="Contact records in this category will be displayed." />
+     </params>
+</install>

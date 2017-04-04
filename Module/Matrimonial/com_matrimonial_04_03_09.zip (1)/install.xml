@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>matrimonial</name>
+  <creationDate>Feb 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>Open Source under GNU/GPL </copyright>
+  <license>Open Source </license>
+  <version>1.0.0</version>
+  <description>Classifieds provides the current market information of various products. It includes the 
+  real-state, job online, personal, vehicle etc. </description>
+
+<files folder="site">
+			<filename component="com_matrimonail">matrimonial.php </filename>
+			<filename>/assets/base.gif</filename>
+			<filename>/assets/loginbase.gif</filename>
+			<filename>/assets/matlog.gif</filename>
+			<filename>/assets/sfbase.gif</filename>
+			<filename>/assets/regback.gif</filename>
+			<filename>/assets/searchbase.gif</filename>
+			<filename>/assets/space.gif</filename>
+			<filename>/assets/sbase.gif</filename>
+			<filename>/assets/fbase.gif</filename>
+			<filename>/assets/mbase.gif</filename>
+			<filename>/assets/lhbase.gif</filename>
+			<filename>/assets/photos/blnkphotogif.gif</filename>
+
+			<filename>controllers/matrimonial.php</filename>
+			<filename>models/matrimonial.php</filename>
+			
+			<filename>views/matrimonial/view.html.php</filename>
+			<filename>views/matrimonial/tmpl/default.php</filename>
+			<filename>views/matrimonial/tmpl/default_msg.php</filename>
+			
+			<filename>views/registration/view.html.php</filename>
+			<filename>views/registration/tmpl/default_profileform.php</filename>
+			<filename>views/registration/tmpl/default_regform.php</filename>
+			<filename>views/registration/tmpl/default_frgpwdform.php</filename>
+			
+			<filename>views/search/view.html.php</filename>
+			<filename>views/search/tmpl/default_sresult.php</filename>
+			<filename>views/search/tmpl/default_pinfo.php</filename>
+			
+			<filename>views/login/view.html.php</filename>
+			<filename>views/login/tmpl/default_sresult.php</filename>
+			<filename>views/login/tmpl/default_user.php</filename>
+			<filename>views/login/tmpl/default_msgread.php</filename>
+			<filename>views/login/tmpl/default_msg.php</filename>
+			<filename>views/login/tmpl/default_changepwd.php</filename>
+			<filename>views/login/tmpl/default_editprofile.php</filename>
+			<filename>views/login/tmpl/default_spartner.php</filename>
+			
+			
+			
+			
+</files>
+
+  <administration>
+    <menu>Matrimonial</menu>
+	<submenu>
+		<menu link="option=com_matrimonial&amp;controller=user">Users</menu>
+		<menu link="option=com_matrimonial&amp;controller=profile">Profile</menu>
+		<menu link="option=com_matrimonial&amp;controller=msg">Message</menu>
+	</submenu>
+   <files folder="admin">
+            <filename>admin.matrimonial.php</filename>
+			 
+			<filename>controllers/user.php</filename>
+			<filename>tables/user.php</filename>
+			<filename>models/user.php</filename>
+			<filename>models/useredit.php</filename>
+			<filename>views/user/view.html.php</filename>
+			<filename>views/user/tmpl/default.php</filename>
+			<filename>views/useredit/view.html.php</filename>
+			<filename>views/useredit/tmpl/form.php</filename>
+			<filename>views/useremail/view.html.php</filename>
+			<filename>views/useremail/tmpl/default_email.php</filename>
+			
+			<filename>controllers/profile.php</filename>
+			<filename>tables/profile.php</filename>
+			<filename>models/profile.php</filename>
+			<filename>models/profileedit.php</filename>
+			<filename>views/profile/view.html.php</filename>
+			<filename>views/profile/tmpl/default.php</filename>
+			<filename>views/profileedit/view.html.php</filename>
+			<filename>views/profileedit/tmpl/form.php</filename>
+			
+			<filename>controllers/msg.php</filename>
+			<filename>tables/msg.php</filename>
+			<filename>models/msg.php</filename>
+			<filename>models/msgedit.php</filename>
+			<filename>views/msg/view.html.php</filename>
+			<filename>views/msg/tmpl/default.php</filename>
+			<filename>views/msgedit/view.html.php</filename>
+			<filename>views/msgedit/tmpl/form.php</filename>
+			<filename>views/msgread/view.html.php</filename>
+			<filename>views/msgread/tmpl/default_msg.php</filename>
+	</files>  
+  </administration>
+  </install>

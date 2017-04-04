@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>Classifieds</name>
+  <creationDate>Feb 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>Open Source under GNU/GPL </copyright>
+  <license>Open Source </license>
+  <version>1.0.0</version>
+  <description>Classifieds provides the current market information of various products. It includes the 
+  real-state, job online, personal, vehicle etc. </description>
+
+<files folder="site">
+			<filename component="com_classifieds">classifieds.php </filename>
+			<filename>/assets/headerinfo.php</filename>
+			<filename>/assets/clasbase.jpg</filename>
+			<filename>/assets/classifieds.jpg</filename>
+
+			<filename>controllers/categories.php</filename>
+			<filename>models/categories.php</filename>
+			<filename>views/categories/view.html.php</filename>
+			<filename>views/categories/tmpl/default.php</filename>
+
+			<filename>controllers/jobs.php</filename>
+			<filename>models/jobs.php</filename>
+			<filename>models/jobsinfo.php</filename>
+			<filename>views/jobs/view.html.php</filename>
+			<filename>views/jobs/tmpl/default.php</filename>
+			<filename>views/jobsinfo/view.html.php</filename>
+			<filename>views/jobsinfo/tmpl/default.php</filename>
+
+			<filename>controllers/realstate.php</filename>
+			<filename>models/realstate.php</filename>
+			<filename>models/realstateinfo.php</filename>
+			<filename>views/realstate/view.html.php</filename>
+			<filename>views/realstate/tmpl/default.php</filename>
+			<filename>views/realstateinfo/view.html.php</filename>
+			<filename>views/realstateinfo/tmpl/default.php</filename>
+
+			<filename>controllers/computer.php</filename>
+			<filename>models/computer.php</filename>
+			<filename>models/computerinfo.php</filename>
+			<filename>views/computer/view.html.php</filename>
+			<filename>views/computer/tmpl/default.php</filename>
+			<filename>views/computerinfo/view.html.php</filename>
+			<filename>views/computerinfo/tmpl/default.php</filename>
+
+			<filename>controllers/vehicle.php</filename>
+			<filename>models/vehicle.php</filename>
+			<filename>models/vehicleinfo.php</filename>
+			<filename>views/vehicle/view.html.php</filename>
+			<filename>views/vehicle/tmpl/default.php</filename>
+			<filename>views/vehicleinfo/view.html.php</filename>
+			<filename>views/vehicleinfo/tmpl/default.php</filename>
+			
+			<filename>controllers/tea.php</filename>
+			<filename>models/tea.php</filename>
+			<filename>models/teainfo.php</filename>
+			<filename>views/tea/view.html.php</filename>
+			<filename>views/tea/tmpl/default.php</filename>
+			<filename>views/teainfo/view.html.php</filename>
+			<filename>views/teainfo/tmpl/default.php</filename>
+			
+			<filename>controllers/personal.php</filename>
+			<filename>models/personal.php</filename>
+			<filename>models/personalinfo.php</filename>
+			<filename>views/personal/view.html.php</filename>
+			<filename>views/personal/tmpl/default.php</filename>
+			<filename>views/personalinfo/view.html.php</filename>
+			<filename>views/personalinfo/tmpl/default.php</filename>
+</files>
+
+  <administration>
+    <menu>Classifieds</menu>
+	<submenu>
+		<menu link="option=com_classifieds&amp;controller=realstate">RealState</menu>
+		<menu link="option=com_classifieds&amp;controller=tea">Tea</menu>
+		<menu link="option=com_classifieds&amp;controller=jobs">Jobs</menu>
+		<menu link="option=com_classifieds&amp;controller=vehicle">Vehicle</menu>
+		<menu link="option=com_classifieds&amp;controller=computer">computer</menu>
+		<menu link="option=com_classifieds&amp;controller=personal">personal</menu>
+		<menu link="option=com_classifieds&amp;controller=vendor">Vendor</menu>
+		<menu link="option=com_classifieds&amp;controller=category">Category</menu>
+	</submenu>
+   <files folder="admin">
+              <filename>admin.classifieds.php</filename> 
+
+			<filename>controllers/realstate.php</filename>
+			<filename>models/realstate.php</filename>
+			<filename>models/realstateinput.php</filename>
+			<filename>Tables/realstate.php</filename>
+			<filename>views/realstate/view.html.php</filename>
+			<filename>views/realstate/tmpl/default.php</filename>
+			<filename>views/realstateInput/view.html.php</filename>
+			<filename>views/realstateInput/tmpl/form.php</filename>
+			<filename>helpers/realstate_items.xml</filename>
+
+			<filename>controllers/jobs.php</filename>
+			<filename>models/jobs.php</filename>
+			<filename>models/jobsinput.php</filename>
+			<filename>Tables/jobs.php</filename>
+			<filename>views/jobs/view.html.php</filename>
+			<filename>views/jobs/tmpl/default.php</filename>
+			<filename>views/jobsInput/view.html.php</filename>
+			<filename>views/jobsInput/tmpl/form.php</filename>
+			<filename>helpers/jobs_items.xml</filename>
+	
+			<filename>controllers/vehicle.php</filename>
+			<filename>models/vehicle.php</filename>
+			<filename>models/vehicleinput.php</filename>
+			<filename>Tables/vehicle.php</filename>
+			<filename>views/vehicle/view.html.php</filename>
+			<filename>views/vehicle/tmpl/default.php</filename>
+			<filename>views/vehicleInput/view.html.php</filename>
+			<filename>views/vehicleInput/tmpl/form.php</filename>
+			<filename>helpers/vehicle_items.xml</filename>
+			
+			<filename>controllers/tea.php</filename>
+			<filename>models/tea.php</filename>
+			<filename>models/teainput.php</filename>
+			<filename>Tables/tea.php</filename>
+			<filename>views/tea/view.html.php</filename>
+			<filename>views/tea/tmpl/default.php</filename>
+			<filename>views/teaInput/view.html.php</filename>
+			<filename>views/teaInput/tmpl/form.php</filename>
+			<filename>helpers/tea_items.xml</filename>
+
+			<filename>controllers/computer.php</filename>
+			<filename>models/computer.php</filename>
+			<filename>models/computerinput.php</filename>
+			<filename>Tables/computer.php</filename>
+			<filename>views/computer/view.html.php</filename>
+			<filename>views/computer/tmpl/default.php</filename>
+			<filename>views/computerInput/view.html.php</filename>
+			<filename>views/computerInput/tmpl/form.php</filename>
+			<filename>helpers/computer_items.xml</filename>
+
+
+			<filename>controllers/personal.php</filename>
+			<filename>models/personal.php</filename>
+			<filename>models/personalinput.php</filename>
+			<filename>Tables/personal.php</filename>
+			<filename>views/personal/view.html.php</filename>
+			<filename>views/personal/tmpl/default.php</filename>
+			<filename>views/personalInput/view.html.php</filename>
+			<filename>views/personalInput/tmpl/form.php</filename>
+			<filename>helpers/personal_items.xml</filename>
+
+	
+        	<filename>controllers/vendor.php</filename>
+			<filename>models/vendor.php</filename>
+			<filename>models/vendorinput.php</filename>
+			<filename>Tables/vendor.php</filename>
+			<filename>views/vendor/view.html.php</filename>
+			<filename>views/vendor/tmpl/default.php</filename>
+			<filename>views/vendorInput/view.html.php</filename>
+			<filename>views/vendorInput/tmpl/form.php</filename>
+
+			<filename>controllers/category.php</filename>
+			<filename>models/category.php</filename>
+			<filename>models/categoryinput.php</filename>
+			<filename>Tables/category.php</filename>
+			<filename>views/category/view.html.php</filename>
+			<filename>views/category/tmpl/default.php</filename>
+			<filename>views/categoryInput/view.html.php</filename>
+			<filename>views/categoryInput/tmpl/form.php</filename>
+			   
+	</files>  
+  </administration>
+  </install>

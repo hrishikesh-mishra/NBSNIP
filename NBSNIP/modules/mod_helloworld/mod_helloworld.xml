@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+     <name>Hello World</name>
+     <author>Dan Rahmel</author>
+     <creationDate>March 2007</creationDate>
+     <copyright>(C) 2007 Dan Rahmel. All rights reserved.</copyright>
+     <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+     <authorEmail>admin@joomlajumpstart.org</authorEmail>
+     <authorUrl>www.joomlajumpstart.org</authorUrl>
+     <version>1.0.0</version>
+     <description>Hello World module</description>
+     <files>
+          <filename module="mod_helloworld">mod_helloworld.php</filename>
+     </files>
+</install>

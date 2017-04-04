@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>REPORT</name>
+  <creationDate>March 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>Open Source under GNU/GPL </copyright>
+  <license>Open Source </license>
+  <version>1.0.0</version>
+  <description>Reporting System</description>
+
+	
+
+  <administration>
+    <menu>Report</menu>
+	<submenu>
+		<menu link="option=com_report&amp;controller=visitor">Visitor</menu>
+		<menu link="option=com_report&amp;controller=classifieds">Classifieds</menu>
+		<menu link="option=com_report&amp;controller=matrimonial">Matrimonial</menu>
+		<menu link="option=com_report&amp;controller=blog">Blog</menu>
+		<menu link="option=com_report&amp;controller=socialnetworking">Social-Networking</menu>
+	
+	</submenu>
+   <files folder="admin">
+              <filename>admin.report.php</filename> 
+				<filename>controllers/matrimonial.php</filename>
+			  <filename>models/matrimonial.php</filename>			    
+			   <filename>views/matrimonial/view.html.php</filename>
+			   <filename>views/matrimonial/tmpl/default.php</filename>			    
+	</files>  
+  </administration>
+  </install>

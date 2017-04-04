@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.0" type="component">
+     <name>Guestbook</name>
+     <author>Dan Rahmel</author>
+     <version>1.0.0</version>
+     <description>Presents a guestbook and lists all of the current entries 
+     along with an entry form at the bottom for registered user additions.</description>
+     <files>
+          <filename component="com_guestbook">guestbook.php</filename>         
+     </files>
+     <install>
+          <sql>
+               <file driver="mysql" charset="utf8">install.sql</file>
+          </sql>
+     </install>
+
+     <uninstall>
+          <sql>
+               <file driver="mysql" charset="utf8">uninstall.sql</file>
+          </sql>
+     </uninstall>
+     <administration>
+          <menu>Guestbook</menu>
+         <files>
+              <filename component="admin.guestbook">admin.guestbook.php</filename>         
+               <filename>install.sql</filename>
+               <filename>uninstall.sql</filename>
+         </files>
+     </administration>
+
+</install>

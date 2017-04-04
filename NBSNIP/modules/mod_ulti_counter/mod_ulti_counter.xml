@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.2">
+	<name>ulti Counter</name>
+	<author>Frederik Teerlinck</author>
+	<version>1.0.8</version>
+    <copyright>GNU/GPL.</copyright>
+	<description>Module which counts down to an event</description>
+	<files>
+		<filename module="mod_ulti_counter">mod_ulti_counter.php</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>javascript/ulticounter.js</filename>
+	</files>
+	<params>
+		<param name="day" type="text" default="01" label="Day" description="Day of the event (1-31)"/>
+		<param name="month" type="text" default="01" label="Month" description="Month of the event  (1-12)"/>
+		<param name="year" type="text" default="2009" label="Year" description="Year of the event  (1971 - 20..)"/>
+		<param name="hour" type="text" default="00" label="Hour" description="Hour of the event (0-23)"/>
+		<param name="minute" type="text" default="00" label="Minute" description="Minute of the event (0-59)"/>
+		<param name="second" type="text" default="00" label="Second" description="Second of the event (0-59)"/>
+		<param name="offset" type="text" default="0" label="Time offset of the server in hours" description="Can be used if your server is in a different timezone"/>
+		<param name="format" type="radio" default="1" label="Choose Format" description="Choose format to display the countdown">
+			<option value="1">e.g. 2 days 9 hours 23 minutes 12 seconds &lt;BR&gt;</option>
+			<option value="2">e.g. 2 days 9 hours 23 minutes &lt;BR&gt;</option>
+			<option value="3">e.g. 2 days 9 hours &lt;BR&gt;</option>
+			<option value="4">e.g. 2 days &lt;BR&gt;</option>
+			<option value="5">e.g. 2 days 9:23:12 &lt;BR&gt;</option>
+			<option value="6">e.g. 2 &lt;BR&gt;</option>			
+		</param>
+		<param name="leading" type="text" default=" " label="Leading text" description="Text in front of the counter"/>
+		<param name="tailing" type="text" default="left until the event" label="Tailing text" description="Text after the counter"/>
+                <param name="keepCounting" type="radio" default="0" label="Count after event" description="Keep counting (up) after event has passed?">
+                  <option value="0">No</option> 
+                  <option value="1">Yes</option> 
+                </param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+	</params>
+</install>

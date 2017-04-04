@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>EasyBook</name>
+	<author>EasyJoomla.org Project</author>
+	<creationDate>2008 11 05</creationDate>
+	<copyright>Copyright 2007 David Jardin - All rights reserved</copyright>
+	<license>Released under GNU/GPL</license>
+	<authorEmail>easybook@easy-joomla.org</authorEmail>
+	<authorUrl>http://www.easy-joomla.org</authorUrl>
+	<version>2.0 rc4</version>
+	<description><![CDATA[EasyBook is a nativ Joomla 1.5 Guestbook Component]]></description>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>easybook.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<filename>acl.php</filename>
+		<filename>acl-php4.php</filename>
+		<filename>controllers/entry.php</filename>
+		<filename>controllers/index.html</filename>
+		<filename>helpers/index.html</filename>
+		<filename>helpers/content.php</filename>
+		<filename>helpers/smilie.php</filename>
+		<filename>helpers/menu.php</filename>
+		<filename>helpers/route.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/entry/index.html</filename>
+		<filename>views/entry/view.html.php</filename>
+		<filename>views/entry/tmpl/index.html</filename>
+		<filename>views/entry/tmpl/form.php</filename>
+		<filename>views/entry/tmpl/commentform.php</filename>
+		<filename>views/entry/tmpl/form.xml</filename>
+		<filename>views/entry/tmpl/commentform.xml</filename>
+		<filename>views/easybook/index.html</filename>
+		<filename>views/easybook/view.html.php</filename>
+		<filename>views/easybook/view.feed.php</filename>
+		<filename>views/easybook/tmpl/index.html</filename>
+		<filename>views/easybook/tmpl/default.php</filename>
+		<filename>views/easybook/tmpl/default.xml</filename>
+		<filename>views/easybook/tmpl/default_entrys.php</filename>
+		<filename>views/easybook/tmpl/default_footer.php</filename>
+		<filename>views/easybook/tmpl/default_header.php</filename>
+		<filename>models/easybook.php</filename>
+		<filename>models/entry.php</filename>
+		<filename>models/index.html</filename>
+		<filename>images/index.html</filename>
+		<filename>images/admin.png</filename>
+		<filename>images/book.png</filename>
+		<filename>images/comment_edit.png</filename>
+		<filename>images/comment.png</filename>
+		<filename>images/delete.png</filename>
+		<filename>images/edit.png</filename>
+		<filename>images/email.png</filename>
+		<filename>images/im-aim.png</filename>
+		<filename>images/im-icq.png</filename>
+		<filename>images/im-msn.png</filename>
+		<filename>images/im-skype.png</filename>
+		<filename>images/im-yahoo.png</filename>
+		<filename>images/new.png</filename>
+		<filename>images/offline.png</filename>
+		<filename>images/online.png</filename>
+		<filename>images/entry_bg.gif</filename>
+		<filename>images/world.png</filename>
+		<filename>images/clouds.png</filename>
+		<filename>images/sun.png</filename>
+		<filename>images/logo_sm.png</filename>
+		<filename>css/index.html</filename>
+		<filename>css/easybook.css</filename>
+		<filename>images/smilies/sm_bigeek.gif</filename>
+		<filename>images/smilies/sm_biggrin.gif</filename>
+		<filename>images/smilies/sm_confused.gif</filename>
+		<filename>images/smilies/sm_cool.gif</filename>
+		<filename>images/smilies/sm_cry.gif</filename>
+		<filename>images/smilies/sm_dead.gif</filename>
+		<filename>images/smilies/sm_mad.gif</filename>
+		<filename>images/smilies/sm_razz.gif</filename>
+		<filename>images/smilies/sm_rolleyes.gif</filename>
+		<filename>images/smilies/sm_sigh.gif</filename>
+		<filename>images/smilies/sm_sleep.gif</filename>
+		<filename>images/smilies/sm_smile.gif</filename>
+		<filename>images/smilies/sm_upset.gif</filename>
+		<filename>images/smilies/sm_wink.gif</filename>
+		<filename>images/smilies/index.html</filename>
+		<filename>images/world_link.png</filename>
+		<filename>images/text_underline.png</filename>
+		<filename>images/text_italic.png</filename>
+		<filename>images/text_bold.png</filename>
+		<filename>images/picture_link.png</filename>
+		<filename>images/email_link.png</filename>
+		<filename>scripts/blank.gif</filename>
+		<filename>scripts/pngbehavior.htc</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">site/languages/en-GB.com_easybook.ini</language>
+		<language tag="de-DE">site/languages/de-DE.com_easybook.ini</language>
+		<language tag="es-ES">site/languages/es-ES.com_easybook.ini</language>
+		<language tag="nl-NL">site/languages/nl-NL.com_easybook.ini</language>
+		<language tag="ru-RU">site/languages/ru-RU.com_easybook.ini</language>
+		<language tag="hu-HU">site/languages/hu-HU.com_easybook.ini</language>
+	</languages>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+			<file driver="mysql">install.nonutf8.sql</file>
+		</sql>
+	</install>
+	<administration>
+		<menu img="components/com_easybook/images/easybook_ico.png"><![CDATA[EasyBook]]></menu>
+		<submenu>
+			<menu img="components/com_easybook/images/easybook_edit.png" link="option=com_easybook"><![CDATA[Manage Entries]]></menu>
+			<menu img="components/com_easybook/images/easybook_unhappy.png" link="option=com_easybook&amp;controller=badwords"><![CDATA[Badwordfilter]]></menu>
+			<menu img="components/com_easybook/images/easybook_info.png" link="option=com_easybook&amp;task=about"><![CDATA[About]]></menu>
+		</submenu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>easybook.php</filename>
+			<filename>CHANGELOG.php</filename>
+			<filename>element/acl.php</filename>
+			<filename>element/captcha.php</filename>
+			<filename>element/index.html</filename>
+			<filename>models/easybook.php</filename>
+			<filename>models/entry.php</filename>
+			<filename>models/badword.php</filename>
+			<filename>models/badwords.php</filename>
+			<filename>models/index.html</filename>
+			<filename>helpers/version.php</filename>
+			<filename>libraries/httpclient.class.php</filename>
+			<filename>css/easybook.css</filename>
+			<filename>css/index.html</filename>
+			<filename>images/index.html</filename>
+			<filename>images/easybook_ico.png</filename>
+			<filename>images/easybook_icon.png</filename>
+			<filename>images/easybook_info.png</filename>
+			<filename>images/easybook_unhappy.png</filename>
+			<filename>images/easybook_edit.png</filename>
+			<filename>images/box.gif</filename>
+			<filename>images/admin.donate_button.png</filename>
+			<filename>images/nonstopweb_logo.jpg</filename>
+			<filename>images/shield.gif</filename>
+			<filename>images/fail.gif</filename>
+			<filename>views/index.html</filename>
+			<filename>views/easybook/index.html</filename>
+			<filename>views/easybook/view.html.php</filename>
+			<filename>views/easybook/tmpl/default.php</filename>
+			<filename>views/easybook/tmpl/index.html</filename>
+			<filename>views/about/index.html</filename>
+			<filename>views/about/view.html.php</filename>
+			<filename>views/about/tmpl/default.php</filename>
+			<filename>views/about/tmpl/index.html</filename>
+			<filename>views/entry/index.html</filename>
+			<filename>views/entry/view.html.php</filename>
+			<filename>views/entry/tmpl/form.php</filename>
+			<filename>views/entry/tmpl/index.html</filename>
+			<filename>views/badwords/index.html</filename>
+			<filename>views/badwords/view.html.php</filename>
+			<filename>views/badwords/tmpl/default.php</filename>
+			<filename>views/badwords/tmpl/index.html</filename>
+			<filename>views/badword/index.html</filename>
+			<filename>views/badword/view.html.php</filename>
+			<filename>views/badword/tmpl/form.php</filename>
+			<filename>views/badword/tmpl/index.html</filename>
+			<filename>controllers/entry.php</filename>
+			<filename>controllers/badwords.php</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controller.php</filename>
+			<filename>install.sql</filename>
+			<filename>install.nonutf8.sql</filename>
+			<filename>tables/entry.php</filename>
+			<filename>tables/badword.php</filename>
+			<filename>tables/index.html</filename>
+		</files>	
+		<languages>
+			<language tag="en-GB">admin/languages/en-GB.com_easybook.ini</language>
+			<language tag="de-DE">admin/languages/de-DE.com_easybook.ini</language>
+			<language tag="es-ES">admin/languages/es-ES.com_easybook.ini</language>
+			<language tag="nl-NL">admin/languages/nl-NL.com_easybook.ini</language>
+			<language tag="hu-HU">admin/languages/hu-HU.com_easybook.ini</language>
+			<language tag="ru-RU">admin/languages/ru-RU.com_easybook.ini</language>
+			<language tag="en-GB">admin/languages/en-GB.com_easybook.menu.ini</language>
+			<language tag="de-DE">admin/languages/de-DE.com_easybook.menu.ini</language>
+			<language tag="es-ES">admin/languages/es-ES.com_easybook.menu.ini</language>
+			<language tag="nl-NL">admin/languages/nl-NL.com_easybook.menu.ini</language>
+			<language tag="ru-RU">admin/languages/ru-RU.com_easybook.menu.ini</language>
+			<language tag="hu-HU">admin/languages/hu-HU.com_easybook.menu.ini</language>
+		</languages>	
+	</administration>
+</install>

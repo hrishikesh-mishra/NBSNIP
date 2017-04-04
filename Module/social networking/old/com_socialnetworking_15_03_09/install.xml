@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>Social Networking</name>
+  <creationDate>March 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>Open Source under GNU/GPL </copyright>
+  <license>Open Source </license>
+  <version>1.0.0</version>
+  <description>Social networking Component provides the scraping system and profiling system amoung the registers members
+  . First normal user register them self through the registration form after activation of their account, they can logon
+  to this component and they will able to send the scrap among the register users.</description>
+<files folder="site">
+			<filename component="com_socialNetworking">socialNetworking.php </filename>
+			
+			<filename>/assets/Dustismo.ttf</filename>
+			<filename>/assets/key.gif</filename>
+			<filename>/assets/snbase.gif</filename>
+			<filename>/controllers/socialNetworking.php</filename>
+			<filename>/models/socialNetworking.php</filename>
+			
+			<filename>/views/socialNetworking/view.html.php</filename>
+			<filename>/views/socialNetworking/tmpl/default.php</filename>
+			
+			<filename>/views/registration/view.html.php</filename>
+			<filename>/views/registration/tmpl/default_frgpwdform.php</filename>
+			<filename>/views/registration/tmpl/default_regFrm.php</filename>
+			
+			<filename>/views/login/view.html.php</filename>
+			<filename>/views/login/tmpl/default_chngPwd.php</filename>
+			<filename>/views/login/tmpl/default_editProfile.php</filename>
+			<filename>/views/login/tmpl/default_friendList.php</filename>
+			<filename>/views/login/tmpl/default_prfSearchResult.php</filename>
+			<filename>/views/login/tmpl/default_readProfile.php</filename>
+			<filename>/views/login/tmpl/default_readScrap.php</filename>
+			<filename>/views/login/tmpl/default_searchUser.php</filename>
+			<filename>/views/login/tmpl/default_sndScrap.php</filename>
+			<filename>/views/login/tmpl/default_usermain.php</filename>
+			<filename>/views/login/tmpl/default_userprofile.php</filename>
+			
+			<folder>/assets/captcha</folder>
+			<folder>/assets/photos</folder>
+			
+</files>
+
+
+  <administration>
+    <menu>Socail-Networking</menu>
+	<submenu>
+		<menu link="option=com_socialNetworking&amp;controller=user">User</menu>
+		<menu link="option=com_socialNetworking&amp;controller=profile">Profile</menu>
+		<menu link="option=com_socialNetworking&amp;controller=scrap">Scrap</menu>		
+	</submenu>
+   <files folder="admin">
+            <filename>admin.socialNetworking.php</filename>
+			
+			<filename>/controllers/profile.php</filename>
+			<filename>/controllers/scrap.php</filename>
+			<filename>/controllers/user.php</filename>
+			
+			<filename>/models/profile.php</filename>
+			<filename>/models/profileedit.php</filename>
+			<filename>/models/scrap.php</filename>
+			<filename>/models/scrapedit.php</filename>
+			<filename>/models/user.php</filename>
+			<filename>/models/useredit.php</filename>
+			
+			<filename>/views/profile/view.html.php</filename>
+			<filename>/views/profile/tmpl/default.php</filename>
+			
+			<filename>/views/profileedit/view.html.php</filename>
+			<filename>/views/profileedit/tmpl/form.php</filename>
+			
+			<filename>/views/scrap/view.html.php</filename>
+			<filename>/views/scrap/tmpl/default.php</filename>
+			
+			<filename>/views/scrapedit/view.html.php</filename>
+			<filename>/views/scrapedit/tmpl/form.php</filename>
+			
+			<filename>/views/user/view.html.php</filename>
+			<filename>/views/user/tmpl/default.php</filename>
+			
+			<filename>/views/useredit/view.html.php</filename>
+			<filename>/views/useredit/tmpl/form.php</filename>
+			
+			<filename>/views/useremail/view.html.php</filename>
+			<filename>/views/useremail/tmpl/default_email.php</filename>
+			
+			<filename>/tables/friend.php</filename>
+			<filename>/tables/friendship.php</filename>
+			<filename>/tables/profile.php</filename>
+			<filename>/tables/scrap.php</filename>
+			<filename>/tables/user.php</filename>
+			
+			
+	</files>  
+  </administration>
+  </install>

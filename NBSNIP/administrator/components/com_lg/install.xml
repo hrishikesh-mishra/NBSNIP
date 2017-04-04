@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>lg</name>
+  <creationDate>Feb 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>Open Source under GNU/GPL </copyright>
+  <license>Open Source </license>
+  <version>1.0.0</version>
+  <description>Login System </description>
+
+<files folder="site">
+			<filename component="com_lg">lg.php </filename>
+
+			<filename>controllers/login.php</filename>
+			<filename>models/login.php</filename>
+			<filename>views/login/view.html.php</filename>
+			<filename>views/login/tmpl/default.php</filename>
+
+</files>
+ <administration>
+    <menu>Classifieds</menu>
+<files folder="admin">
+			<filename component="com_lg">admin.lg.php </filename>
+
+
+</files>
+ </administration>
+  </install>

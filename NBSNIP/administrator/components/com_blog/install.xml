@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>Blog</name>
+  <creationDate>March 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>Open Source under GNU/GPL </copyright>
+  <license>Open Source </license>
+  <version>1.0.0</version>
+  <description>The Blog component provides the facility for register user to add blog, read comment for normal user or 
+  visitor to read the blogs and add comments, search blog on specific topic or on particular date wise and admin can
+  read or edit any register user, send email to any register user, read, edit or add comments, or publish own blogs.</description>
+<files folder="site">
+			<filename component="com_blog">blog.php </filename>
+			
+			<filename>/controllers/blog.php</filename>
+			<filename>/models/blog.php</filename>
+			
+			<filename>/views/blog/view.html.php</filename>
+			<filename>/views/blog/tmpl/default.php</filename>		
+			<filename>/views/blog/tmpl/default_blogFullinfo.php</filename>		
+			<filename>/views/blog/tmpl/default_sblog.php</filename>		
+									
+			<filename>/views/registration/view.html.php</filename>
+			<filename>/views/registration/tmpl/default_frgpwdform.php</filename>		
+			<filename>/views/registration/tmpl/default_regFrm.php</filename>		
+			
+			<filename>/views/login/view.html.php</filename>
+			<filename>/views/login/tmpl/default_cngpwd.php</filename>		
+			<filename>/views/login/tmpl/default_deskboard.php</filename>
+			<filename>/views/login/tmpl/default_editPrf.php</filename>		
+			<filename>/views/login/tmpl/default_mngCmt.php</filename>
+			<filename>/views/login/tmpl/default_mngCmtRead.php</filename>		
+			<filename>/views/login/tmpl/default_mnsblg.php</filename>
+			<filename>/views/login/tmpl/default_mnsblgRead.php</filename>
+			<filename>/views/login/tmpl/default_msgCmtEdit.php</filename>
+			<filename>/views/login/tmpl/default_user.php</filename>
+			<filename>/views/login/tmpl/default_writeblg.php</filename>
+			
+			<filename>/assets/bbase.gif</filename>
+			<filename>/assets/Dustismo.ttf</filename>
+			<filename>/assets/frmbase_01.gif</filename>
+			<filename>/assets/frmbase_02.gif</filename>
+			<filename>/assets/frmbase_03.gif</filename>
+			<filename>/assets/frmbase_04.gif</filename>
+			<filename>/assets/frmbase_05.gif</filename>
+			<filename>/assets/regbase.gif</filename>
+			<filename>/assets/photos/hrishi.GIF</filename>
+			<filename>/assets/captcha/YQ53C.png</filename>
+</files>
+
+  <administration>
+    <menu>Blog</menu>
+	<submenu>
+		<menu link="option=com_blog&amp;controller=user">User</menu>
+		<menu link="option=com_blog&amp;controller=blog">Blog</menu>
+		<menu link="option=com_blog&amp;controller=comment">Comment</menu>		
+	</submenu>
+   <files folder="admin">
+            <filename>admin.blog.php</filename>
+			 
+			 <filename>/controllers/blog.php</filename>
+			 <filename>/controllers/comment.php</filename>
+			 <filename>/controllers/user.php</filename>
+			 
+			 <filename>/models/blog.php</filename>
+			 <filename>/models/blogedit.php</filename>
+			 <filename>/models/comment.php</filename>
+			 <filename>/models/commentedit.php</filename>
+			 <filename>/models/user.php</filename>
+			 <filename>/models/useredit.php</filename>
+			 
+			 
+			 <filename>/Tables/blog.php</filename>
+			 <filename>/Tables/comment.php</filename>
+			 <filename>/Tables/user.php</filename>
+			 
+			 
+			 <filename>/views/blog/view.html.php</filename>
+			 <filename>/views/blog/tmpl/default.php</filename>
+			 
+			 <filename>/views/blogedit/view.html.php</filename>
+			 <filename>/views/blogedit/tmpl/form.php</filename>
+			 
+			 <filename>/views/comment/view.html.php</filename>
+			 <filename>/views/comment/tmpl/default.php</filename>
+			 
+			 <filename>/views/commentedit/view.html.php</filename>
+			 <filename>/views/commentedit/tmpl/form.php</filename>
+			 
+			 <filename>/views/user/view.html.php</filename>
+			 <filename>/views/user/tmpl/default.php</filename>
+			 
+			 <filename>/views/useredit/view.html.php</filename>
+			 <filename>/views/useredit/tmpl/form.php</filename>
+			 
+			 <filename>/views/useremail/view.html.php</filename>
+			 <filename>/views/useremail/tmpl/default_email.php</filename>
+			 
+	</files>  
+  </administration>
+  </install>

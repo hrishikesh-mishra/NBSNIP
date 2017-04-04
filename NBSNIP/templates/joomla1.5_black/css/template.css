@@ -1,0 +1,248 @@
+/* general stuff */
+
+/*general formatting tags*/
+
+
+
+h1,h2,h3,h4,h5,h6,p,blockquote,form,label,ul,ol,dl,fieldset,address, table{ margin:0.2em;padding: 0.2em;}
+
+h1{text-align:center;
+   font-size: 2.0em;
+  }
+
+h2{text-align:center;
+   font-size: 1.6em;
+  }
+
+h3{text-align:center;
+   font-size: 1.3em;
+  }
+  
+h4{
+   text-align:left;
+   font-size: 1.1em;
+  } 
+  
+h5{text-align:left;
+   font-size: 1.0em;
+  }
+  
+h6{text-align:left;
+   font-size: 0.8em;
+  }  
+  
+img {border:0 none;}
+
+.small{font-size: 85%; }
+  
+
+
+body{
+margin:0;
+padding:0;
+font-family: verdana, arial, sans-serif;
+font-size: 70%;
+}
+
+a {
+text-decoration:  none;
+font-weight: bold;
+border: none;
+ }
+a:hover {
+text-decoration:  underline; 
+border: none;
+ }
+ 
+/* Layout */
+
+#accessibility {
+position: absolute;
+left: -2000px;
+top: -2000px;
+display: none;
+}
+
+#source {
+position: absolute;
+left: -2000px;
+top: -2000px;
+display: none;
+}
+
+#maindiv{border-width: 1px;
+         border-style: solid;
+         width: 760px;
+       
+         padding: 0px;
+         margin-left: auto;
+	 margin-right: auto;
+	 margin-top: 20px;
+	 overflow: visible;
+	    }
+#header{ float: left; margin-top: 0px;width: 100% }
+	    
+#search{float: right;
+        margin: 6px; }
+        
+#topmenu{ margin: 10px; }        
+        
+        
+#banner{float:right;
+        margin:6px;
+        border-right-width: 6px;
+        border-right-style: double;
+        border-bottom-width: 6px;
+        border-bottom-style: double;
+        }
+        
+#mylogo {float: left;
+        margin: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 120px;
+	padding: 2px;
+	text-align: center;
+} 
+
+#mylink { 
+	text-decoration: none;
+}
+
+#pathway{ float: left; font-size: 0.9em; width: 700px; margin: 10px;}
+#pathway h3{ display:none;}
+
+#leftcol{ width: 180px; 
+          float: left;
+          margin-left: 0px;}	
+		  
+#rightcol{ width: 170px; 
+          float: left;
+          margin-left: 0px;}	          
+          
+#maincolumn{ width: 400px;
+             float: left;
+            /* border-width: 1px;
+             border-style: solid;*/
+            }
+             
+#user1, #user2{ width: 180px; float: left; margin-left: 10px; margin-top: 10px;}
+#user3{ width: 360px; float:left; margin-left: 10px; margin-top: 10px;}
+#user1 ul, #user2 ul, #user3 ul{ margin-left: 20px; }
+          
+div.bannergroup_text{ font-style: italic; font-weight: lighter; font-size: 0.9em;}
+div.bannerheader{ font-weight: bold; font-style:normal; font-size: 1.2em; margin:4px;}
+div.banneritem_text a{ font-style:normal; text-decoration:underline; font-weight: normal;font-size: 1.0em;}
+div.banneritem_text{ margin: 4px; }
+
+/*left and right columns*/
+
+#leftcol div.module, #leftcol div.module_menu, #leftcol div.module_text, #rightcol div.module, #rightcol div.module_menu, #rightcol div.module_text, #leftcol div.moduletable_menu, #rightcol div.moduletable_menu, #leftcol div.moduletable, #rightcol div.moduletable, #leftcol div.moduletable_text, #rightcol div.moduletable_text{ border-width: 1px;
+            border-style: solid; margin-bottom: 10px; margin-top:10px;
+          }
+          
+          
+#leftcol div.module table, #leftcol div.module_menu table, #leftcol div.module ul, #leftcol div.module_menu ul{ margin: 10px; padding: 1px; width: 150px; text-align: right;} 
+#leftcol div.module td, #leftcol div.module_menu ts{ text-align: right;} 
+#rightcol div.bannergroup_text, #rightcol form, #rightcol div.moduletable{ width: 160px; margin:0px; padding:0px; margin-top:10px; margin-bottom:10px;}          
+#rightcol div.module table, #rightcol form table{ margin: 10px; padding: 0px; width: 120px;} 
+div.module h3, div.module_menu h3, div.module_text h3, div.moduletable h3, div.moduletable_text h3, div.moduletable_menu h3{ font-size: 0.95em; margin: 0.1em; }
+div.module td, div.moduletable_menu td{ margin: 10px;}
+
+#leftcol div.module, #leftcol div.module_menu{ margin-left: 0px; margin-bottom: 10px; }
+#rightcol div.module{ margin-left: 0px; margin-bottom: 10px; }
+
+
+#rightcol table{ margin:2px;padding: 0px;}
+#rightcol ul{ list-style-type: none; padding:2px;}
+
+div.mosimage_caption{ font-size: 0.8em; font-style: italic; }
+table.pollstableborder{ text-align: left; }
+
+#leftcol li{ padding-right: 2px; border-right-width: 2px; border-right-style: solid;border-left-width: 2px; border-left-style: solid;}
+#leftcol a:hover{ text-decoration: none; }
+#leftcol ul{ list-style-type: none; margin-right: 2px; padding-right:2px;}
+#leftcol div div div div{ padding: 4px; }
+
+/*sub menus*/
+
+#leftcol li ul li, #leftcol li.parent.active ul li{border-width:0px; font-size: 0.9em; text-align:left; list-style-type:disc; margin-left:1px;}
+#leftcol li ul, #leftcol li.parent.active ul{ margin-top:2px; margin-bottom:4px;}
+#leftcol li ul li a, #leftcol li.parent.active ul li a{ text-decoration: none; }
+#leftcol li.parent.active{ text-align: right; font-weight: bold;}
+#leftcol li.parent.active a{  text-decoration: underline; }
+#leftcol li.parent.active ul li ul li{ list-style-type:circle;}
+
+
+table.poll thead td{  padding:2px; text-align: center; }
+td.buttonheading{ width: 10px; overflow:visible;}
+
+/* main leve nav*/
+#topmenu ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+float: right;
+white-space: nowrap;
+}
+
+
+#topmenu ul li{
+float: left;
+margin: 0;
+white-space: nowrap;
+margin-right: 1px;	
+}
+
+#topmenu ul li a{
+display: block;
+padding-left: 5px;
+padding-right: 10px;
+text-decoration: none;
+margin-left: 5px;
+white-space: nowrap;
+}
+
+#topmenu ul li{border-right-width: 2px; border-right-style: solid; border-left-width: 2px; border-left-style: solid; margin-right: 4px;}
+#topmenu ul li a:hover{ }
+
+/*footer*/
+#footer{ text-align: center; }
+
+/*main content layout*/
+#content{ margin: 10px; padding: 6px; text-align: justify; border-width: 1px; border-style: solid;}
+td.contentheading{ font-weight: bold; font-size: 1.2em; text-decoration: underline; }
+td.modifydate, td.createdate{ font-size: 0.9em; font-style: italic; }
+#content table.contentpaneopen{ margin: 2px; }
+#content img{ margin: 4px; } 
+#content li{ margin-left: 10px;}
+#content ul{ margin: 10px; }
+#content span.item_toc{float:right; }
+#content h2, #content h3{  margin: 0.5em; padding: 0.1em; margin-right:auto; margin-left:auto; width: 95%;}
+td.contentheading, h1.contentheading, h2.contentheading, h3.contentheading, h4.contentheading, h5.contentheading, h6.contentheading{  text-align:left; margin: 0.5em; padding: 0.1em; margin-right:auto; margin-left:auto; width: 90%;}
+#content h1 a, #content h2 a, #content h3 a, #content h4 a, #content h5 a, #content h6 a{text-decoration:none; }
+#content div.componentheading{ font-weight:bold; font-size: 1.4em; }
+#content div.componentheading,  #content p, #content div.contentpane,#content div.contentpaneopen, #content table.contentpane{ margin: 4px; padding: 4px; }
+#content table.contenttoc {margin:8px;padding: 4px; }
+#content table.contenttoc td{margin:0px;padding:0px; }
+#content table.contenttoc a{margin-left:4px; margin-right:4px;padding:4px;}
+#content table.contenttoc a:hover{ text-decoration:none; }
+#content table.contentpane{width: 95%;}
+
+/*pagination*/
+
+span.pagenav{ display: none; }
+a.pagenav{ font-weight:bold; font-size: 1.1em;}
+
+div.tool-tip{ padding:2px; }
+
+fieldset{ font-size: 0.9em; }
+table.adminform td, fieldset.metadata, fieldset{ white-space: normal;}
+td.mceToolbarTop, span.mceToolbarContainer{   white-space: normal; text-align:center; position:static !important;}
+td.mceToolbarTop a, td.mceToolbarTop a img{padding:0px; margin:0px; position:static !important;} 
+table.mceEditor, span.mceToolbarContainer, span.mceMenuButton{ position:static !important; }
+#content textarea, textarea#text, textarea.inputbox { width: 330px !important; overflow:auto; }
+textarea#metadesc, textarea#metakey, input#created_by_alias{ width: 250px !important; overflow:auto; }
+
+     

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5">
+  <name>My Extension</name>
+  <creationDate>Feb 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>JMS software Co</copyright>
+  <license>To Byte Hacker</license>
+  <version>1.0.0</version>
+  <description>Developed by Byte Hacker</description>
+  <administration>
+    <menu>My Extension</menu>
+   <files>
+              <filename component="admin.myextension">admin.myextension.php</filename>         
+               <filename>myextension.xml</filename>
+               <filename>controller.php</filename>
+			   <filename>models\foobar.php</filename>
+			   <filename>Tables\foobar.php</filename>
+			   <filename>views\foobar\view.html.php</filename>
+			   <filename>views\foobar\tmpl\default.php</filename>
+			    <filename>views\foobarInput\view.html.php</filename>
+			   <filename>views\foobarInput\tmpl\form.php</filename>
+	</files>
+  
+  </administration>
+	
+  
+</install>

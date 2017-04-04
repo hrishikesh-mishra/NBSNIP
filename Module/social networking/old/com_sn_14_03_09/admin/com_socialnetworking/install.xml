@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>Social Networking</name>
+  <creationDate>March 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>Open Source under GNU/GPL </copyright>
+  <license>Open Source </license>
+  <version>1.0.0</version>
+  <description>Social networking Component provides the scraping system and profiling system amoung the registers members
+  . First normal user register them self through the registration form after activation of their account, they can logon
+  to this component and they will able to send the scrap among the register users.</description>
+<files folder="site">
+			<filename component="com_socialNetworking">socialNetworking.php </filename>
+			
+			<filename>/controllers/socialNetworking.php</filename>
+			<filename>/models/socialNetworking.php</filename>
+			
+			<filename>/views/socialNetworking/view.html.php</filename>
+			<filename>/views/socialNetworking/tmpl/default.php</filename>					
+</files>
+
+  <administration>
+    <menu>Socail-Networking</menu>
+	<submenu>
+		<menu link="option=com_socialNetworking&amp;controller=user">User</menu>
+		<menu link="option=com_socialNetworking&amp;controller=profile">Profile</menu>
+		<menu link="option=com_socialNetworking&amp;controller=scrap">Scrap</menu>		
+	</submenu>
+   <files folder="admin">
+            <filename>admin.socialNetworking.php</filename>
+	</files>  
+  </administration>
+  </install>

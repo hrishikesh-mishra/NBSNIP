@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user" method="upgrade">
+	<name>NOAH's classifields bridge - USER</name>
+	<author>Evgeny A. Marchenko</author>
+	<creationDate>Septemer 2008</creationDate>
+	<authorEmail>evgeny@indent.ru</authorEmail>
+	<copyright>Copyright (C) 2008. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>0.0.1a</version>
+	<description >
+		This is a bridge plugin for NOAH's classified script. User part.
+	</description>
+	<files>
+		<filename plugin="noah">noah.php</filename>
+	</files>
+	<params>
+		<param name="noah_path" type="text" size="15" default="../noah" label="Path to NOAH's classified" description="Path to NOAH's classified"/>
+	</params>
+</install>

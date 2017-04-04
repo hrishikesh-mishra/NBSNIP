@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>siteground-j15-69</name>
+	<version>1.0.0</version>
+	<creationDate>09/2008</creationDate>
+	<author>SiteGround</author>
+	<authorEmail>templates@siteground.com</authorEmail>
+	<authorUrl>http://www.siteground.com</authorUrl>
+	<copyright>SiteGround</copyright>
+	<license>SG TOS</license>
+	<description>TEMPLATE_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<filename>templates.php</filename>
+		
+		<filename>images/banner_01.jpg</filename>
+		<filename>images/banner_02.jpg</filename>
+		<filename>images/bg.jpg</filename>
+		<filename>images/but_hover.jpg</filename>	
+		<filename>images/h3_bg.jpg</filename>
+		<filename>images/header_bg.jpg</filename>
+		<filename>images/indent1.png</filename>	
+		<filename>images/indent2.png</filename>		
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>	
+		<filename>images/index.html</filename>
+		<filename>images/l_r_bottom.jpg</filename>
+		<filename>images/l_r_col_middle.jpg</filename>
+		<filename>images/l_r_top.jpg</filename>
+		<filename>images/li.jpg</filename>
+		<filename>images/li1.jpg</filename>
+		<filename>images/menu_row.jpg</filename>		
+		<filename>images/menu_separator.jpg</filename>		
+		<filename>images/news_separator.jpg</filename>
+		<filename>images/page_bg.jpg</filename>
+		<filename>images/pathway.jpg</filename>
+		<filename>images/search.jpg</filename>
+		<filename>images/search_button.jpg</filename>
+		<filename>images/spacer.png</filename>	
+		<filename>images/sub_menu_row.jpg</filename>
+		<filename>images/top_menu_bg.jpg</filename>		
+		
+		<filename>css/index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>css/editor.css</filename>
+		<filename>css/ie6.css</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.tpl_siteground-j15-69.ini</language>
+	</languages>
+	<administration>
+	    <languages folder="admin">
+			<language tag="en-GB">en-GB.tpl_siteground-j15-69.ini</language>
+		</languages>
+    </administration>
+</install>

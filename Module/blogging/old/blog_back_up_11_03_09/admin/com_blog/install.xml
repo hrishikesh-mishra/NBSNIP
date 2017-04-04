@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>Blog</name>
+  <creationDate>March 2009</creationDate>
+  <author>Hrishikesh Kumar </author>
+  <authorEmail>sd.hrishi@gmail.com</authorEmail>
+  <copyright>Open Source under GNU/GPL </copyright>
+  <license>Open Source </license>
+  <version>1.0.0</version>
+  <description>The Blog component provides the facility for register user to add blog, read comment for normal user or 
+  visitor to read the blogs and add comments, search blog on specific topic or on particular date wise and admin can
+  read or edit any register user, send email to any register user, read, edit or add comments, or publish own blogs.</description>
+<files folder="site">
+			<filename component="com_blog">blog.php </filename>
+			
+			<filename>/controllers/blog.php</filename>
+			<filename>/models/blog.php</filename>
+			<filename>/views/blog/view.html.php</filename>
+			<filename>/views/blog/tmpl/default.php</filename>		
+</files>
+
+  <administration>
+    <menu>Blog</menu>
+	<submenu>
+		<menu link="option=com_blog&amp;controller=user">User</menu>
+		<menu link="option=com_blog&amp;controller=blog">Blog</menu>
+		<menu link="option=com_blog&amp;controller=comment">Comment</menu>
+		<menu link="option=com_blog&amp;controller=adminblog">Admin-Blog</menu>
+	</submenu>
+   <files folder="admin">
+            <filename>admin.blog.php</filename>
+	</files>  
+  </administration>
+  </install>

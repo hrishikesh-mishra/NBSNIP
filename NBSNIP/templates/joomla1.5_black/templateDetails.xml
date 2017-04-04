@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="template">
+	<name>joomla1.5_black</name>
+	<version>1.0.0</version>
+	<creationDate>19 January 2008</creationDate>
+	<author>Fiona Coulter</author>
+	<authorEmail>joomla@iswebdesign.co.uk</authorEmail>
+	<authorUrl>http://www.iswebdesign.co.uk</authorUrl>
+	<copyright>Fiona Coulter Inspiration Web Design</copyright>
+	<license>free for single use provided copyright info and branding left intact. You may not resell or redistribute template without permission from the copyright holder.</license>
+	<description>A css based template for Joomla 1.5. It uses javascript to detect the screen size and adjusts the layout to fit. If javascript is disabled the viewer will see the default 760px width layout. It includes an optional scrolling pane for the main content.</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>params.ini</filename>
+		<filename>license.txt</filename>
+		<filename>js/screen.js</filename>
+		<filename>js/index.html</filename>
+		<filename>images/index.html</filename>
+		<filename>css/index.html</filename>
+		<filename>index.html</filename>
+		<filename>images/marble4.jpg</filename>
+		<filename>images/blackswirl.jpg</filename>
+		<filename>images/gradient3.jpg</filename>
+		<filename>css/template.css</filename>
+		<filename>css/medres.css</filename>
+		<filename>css/color_black.css</filename>
+		<filename>includes/footer.php</filename>
+	</files>
+	<positions>
+			<position>left</position>
+			<position>right</position>
+			<position>top</position>
+			<position>breadcrumb</position>
+			<position>user1</position>
+			<position>user2</position>
+			<position>user3</position>
+			<position>user4</position>
+			<position>debug</position>
+			<position>syndicate</position>
+			<position>banner</position>
+	                <position>footer</position>
+	</positions>
+	<params>
+		<param name="colorVariation" type="list" default="black" label="Color Variation" description="Color variation">
+ 			<option value="black">black</option>
+		</param>
+		<param name="showSiteHeading" type="radio" default="1" label="Show Site Heading" description="Show the Site Heading">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+				<param name="contentFormat" type="list" default="1"
+					label="content format - set to scrolling to activate central scroll pane" description="format for the main page content">
+					<option value="1">default</option>
+					<option value="2">scrolling</option>
+				</param>
+		<param name="columnHeight" type="text" size="5" default="46" label="Column Height (em)" description="Column height for scrolling format" ></param>
+	</params>
+</install>

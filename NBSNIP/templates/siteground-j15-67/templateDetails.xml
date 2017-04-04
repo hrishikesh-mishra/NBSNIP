@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>siteground-j15-67</name>
+	<version>1.0.0</version>
+	<creationDate>08/2008</creationDate>
+	<author>SiteGround</author>
+	<authorEmail>templates@siteground.com</authorEmail>
+	<authorUrl>http://www.siteground.com</authorUrl>
+	<copyright>SiteGround</copyright>
+	<license>SG TOS</license>
+	<description>TEMPLATE_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<filename>templates.php</filename>
+		
+		<filename>images/banner_01.jpg</filename>
+		<filename>images/banner_02.jpg</filename>
+		<filename>images/h3.png</filename>
+		<filename>images/li.png</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>
+		<filename>images/index.html</filename>	
+		<filename>images/spacer.png</filename>
+		
+		<filename>images/pillmenu_r_bg.jpg</filename>
+		<filename>images/pillmenu_l_bg.jpg</filename>
+		<filename>images/topw_bg.png</filename>
+		<filename>images/topbg.png</filename>
+		<filename>images/header_bg.png</filename>
+		<filename>images/menu_bottom.png</filename>
+		<filename>images/newsflash_h3.png</filename>
+		<filename>images/newsflash_bg.png</filename>
+		<filename>images/menu_top_out.png</filename>
+		<filename>images/header_bg_1.jpg</filename>
+		<filename>images/header_left_bg.jpg</filename>
+		
+
+		
+		<filename>css/index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>css/editor.css</filename>
+		<filename>css/ie7.css</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.tpl_siteground-j15-67.ini</language>
+	</languages>
+	<administration>
+	    <languages folder="admin">
+			<language tag="en-GB">en-GB.tpl_siteground-j15-67.ini</language>
+		</languages>
+    </administration>
+</install>
